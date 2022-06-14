@@ -33,7 +33,7 @@ while True:
     except IndexError as e:
         viewIncrement = 0
 
-    postUrl = "https://api.thingspeak.com/update?"+thingspeakWriteKey+"&field1="+result['viewCount']+"&field2="+result['likeCount']+"&field3="+result['commentCount']
+    postUrl = "https://api.thingspeak.com/update?ap_key="+thingspeakWriteKey+"&field1="+result['viewCount']+"&field2="+result['likeCount']+"&field3="+result['commentCount']
     
     print("Views Increment:",viewIncrement)
 
